@@ -244,3 +244,18 @@ collections:
                   },
                 ],
             }
+  - name: "partidos comunistas"
+    label: "partidos comunistas"
+    folder: "src/partidos_comunistas"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "blog-post",
+        }
+      - { label: "nombre", name: "title", widget: "string" }
+      - { label: "fecha fundacion", name: "date", widget: "datetime" }
+      - { label: "ideologico", name: "description", widget: "text" }
